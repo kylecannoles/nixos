@@ -45,6 +45,13 @@
     LC_TIME = "ja_JP.UTF-8";
   };
 
+  # Set environmental variables
+  environment.sessionVariables = {
+    XDG_CONFIG_HOME = "$HOME/.config";
+    XDG_DATA_HOME   = "$HOME/.local/share";
+    XDG_CACHE_HOME  = "$HOME/.cache";
+  };
+
   # Add Japanese language IME
   i18n.inputMethod = {
     enabled = "fcitx5";

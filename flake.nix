@@ -17,6 +17,7 @@
         modules = [
           ./machines/laptop/configuration.nix
           ./modules/core.nix
+          ./modules/fonts.nix
           ./modules/user.nix
           ./modules/packages.nix
           ./modules/programs.nix
