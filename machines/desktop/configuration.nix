@@ -59,7 +59,7 @@
     enable = true;
     settings = {
       main = {
-        # overloads the capslock key to function as both escape (when tapped) and control (when held)
+        # overloads the capslock key to function as both escape (when tapped) and backspace (when held)
         capslock = "overload(backspace, esc)";
       };
     };

@@ -30,6 +30,8 @@
      sddm-chili-theme
      # graphics driver
      mesa
+     # keyboard
+     keyd
      # remote management
      vagrant
      ansible
@@ -63,10 +65,11 @@
      #browserpass
      # chat
      #webcord-vencord
-     # iphone tethering
-     libimobiledevice
      # utils
      inxi glxinfo xorg.xdpyinfo # see info about graphics cards
      ncdu # see disk usage
+     # audio
+     pulseaudio  # provides `pactl`, which is required by some apps(e.g. sonic-pi)
+     pavucontrol # pulse audio control GUI
    ];
 }

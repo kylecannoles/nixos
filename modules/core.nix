@@ -8,9 +8,10 @@
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = false;
 
-  #boot.loader.systemd-boot.enable = lib.mkDefault true; # (for UEFI systems only)
-  #boot.loader.systemd-boot.configurationLimit = lib.mkDefault 10;
-  boot.loader.grub.configurationLimit = lib.mkDefault 10;
+  # Use the systemd-boot EFI boot loader.
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.systemd-boot.enable = lib.mkDefault true; # (for UEFI systems only)
+  boot.loader.systemd-boot.configurationLimit = lib.mkDefault 10;
   # do garbage collection weekly to keep disk usage low
   nix.gc = {
     automatic = lib.mkDefault true;
@@ -54,7 +55,7 @@
 
   # Add Japanese language IME
   i18n.inputMethod = {
-    enabled = "fcitx5";
+    #enabled = "fcitx5";
     type = "fcitx5";
     fcitx5.addons = with pkgs; [ 
       fcitx5-mozc
@@ -80,7 +81,7 @@
   services.xserver = {
     enable = lib.mkDefault true;
     desktopManager.xfce.enable = true; # Use xfce for x11 by default
-    xkb.layout = lib.mkDefault "jp";
+    #xkb.layout = lib.mkDefault "jp";
   };
   
 # picom for xfce
