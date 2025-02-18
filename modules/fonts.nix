@@ -5,6 +5,7 @@
     packages = with pkgs; [
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
+      ibm-plex
       nerdfonts
       (nerdfonts.override {
         fonts = [ "FiraCode" "Noto" ];
