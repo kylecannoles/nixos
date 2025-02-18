@@ -28,6 +28,7 @@
      adwaita-icon-theme
      sweet
      sddm-chili-theme
+     bibata-cursors
      # graphics driver
      mesa
      # keyboard
@@ -44,10 +45,13 @@
      gimp
      mpv jellyfin-mpv-shim
      ncmpcpp
+     yt-dlp
      # Japanese
+     file # used for impd compressed audio
      anki
+     mecab # used for anki Japanese sentence parsing
      poetry
-     (python3.withPackages(ps: with ps; [ pywal build material-color-utilities pillow tkinter])) # What is this used for?
+     #(python3.withPackages(ps: with ps; [ pywal build material-color-utilities pillow tkinter ])) # What is this used for? MPV or Anki?
      #text editor
      #neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      vscodium 
@@ -59,10 +63,11 @@
      gitstatus
      # browsers
      brave
+     ungoogled-chromium
      #chromium
      #firefox
      #librewolf
-     #browserpass
+     browserpass
      # chat
      #webcord-vencord
      # utils
