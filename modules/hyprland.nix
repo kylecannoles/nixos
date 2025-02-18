@@ -45,6 +45,7 @@
      swaybg # wallpaper #alternative hyprpaper
      swayidle # idle timeout
      swaylock # lock the screen
+     brightnessctl # change the screen brightness
      gammastep # reduce blue light from screen
      wlogout # logout menu
      wl-clipboard # copy & paste
