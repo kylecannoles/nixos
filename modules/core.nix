@@ -52,6 +52,7 @@
     XDG_DATA_HOME   = "$HOME/.local/share";
     XDG_CACHE_HOME  = "$HOME/.cache";
   };
+  environment.localBinInPath = true;
 
   # Add Japanese language IME
   i18n.inputMethod = {
@@ -74,9 +75,9 @@
   #  upower.enable = true;
   #};
 
-    services.displayManager = {
-      sddm.enable = lib.mkDefault true;
-    };
+  services.displayManager = {
+    sddm.enable = lib.mkDefault true;
+  };
   
   services.xserver = {
     enable = lib.mkDefault true;
